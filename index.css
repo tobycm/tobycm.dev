@@ -1,0 +1,37 @@
+@font-face {
+  font-family: "Ubuntu";
+  font-weight: 400;
+  font-style: normal;
+  src: url("fonts/ubuntu-latin-400-normal.woff2") format("woff2"), url("fonts/ubuntu-latin-400-normal.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Ubuntu";
+  font-weight: 700;
+  font-style: normal;
+  src: url("fonts/ubuntu-latin-700-normal.woff2") format("woff2"), url("fonts/ubuntu-latin-700-normal.woff") format("woff");
+}
+
+body {
+  font-family: Ubuntu, system-ui, sans-serif;
+
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  margin: 1.5rem auto;
+  width: 70vw;
+
+  font-size: 1.2rem;
+}
+
+ul li {
+  margin-bottom: 0.5rem;
+}
+
+#themeButton {
+  font-size: 2rem;
+  cursor: pointer;
+  border: none;
+  margin-top: 1.125rem;
+}
