@@ -125,6 +125,8 @@ p {
 }
 
 .projectDescription {
+  width: 100%;
+
   padding: 1rem;
 }
 
