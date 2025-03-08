@@ -59,19 +59,23 @@ img:hover {
   border-radius: 0 !important;
 }
 
-#logo:hover {
+#logo:hover,
+#logo:active {
   scale: 3;
 }
 
-.bigZoom:hover {
+.bigZoom:hover,
+.bigZoom:active {
   scale: 25;
 }
 
-.midBigZoom:hover {
+.midBigZoom:hover,
+.midBigZoom:active {
   scale: 40;
 }
 
-.biggerZoom:hover {
+.biggerZoom:hover,
+.biggerZoom:active {
   scale: 50;
 }
 
@@ -112,6 +116,12 @@ p {
 .project img {
   border-radius: 1.85rem 0 0 1.85rem;
   height: 100%;
+
+  @media screen and (max-width: 1024px) {
+    border-radius: 1.85rem 1.85rem 0 0;
+    width: 100%;
+    height: unset;
+  }
 }
 
 .projectDescription {
