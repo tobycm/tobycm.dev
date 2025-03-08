@@ -1,3 +1,7 @@
+:root {
+  --primary-color: black;
+}
+
 body {
   background-color: lightpink;
 }

@@ -10,7 +10,7 @@
 
     <!-- Open Graph meta tags -->
     <meta property="og:title" content="Toby Cm's Personal Page" />
-    <meta property="og:description" content="Passionate high school student doing (DevOps and friends)" />
+    <meta property="og:description" content="Passionate high school student with programming, robotics, and friends :)" />
     <meta property="og:image" content="/logo.png" />
     <meta property="og:url" content="https://tobycm.dev/" />
     <meta property="og:site_name" content="Toby Cm's Personal Page" />
@@ -60,27 +60,69 @@
       setTheme(theme);
     </script>
 
-    <h1>
-      Hey! I'm Toby Cm<img src="/logo.svg" alt="toby cm's logo" height="32" width="32" style="height: 2rem; width: auto; margin-left: 0.5rem" />
-    </h1>
+    <div style="display: flex; flex-direction: column; align-items: center">
+      <h1 style="font-size: 3rem">Hey! I'm Toby Cm<img src="/logo.svg" id="logo" alt="toby cm's logo" style="margin-left: 0.5rem" /></h1>
+      <h3>Professional coder and yapper</h3>
+      <br />
+      <h3>Third year at Penticton Secondary</h3>
+      <h3>
+        Leader of <a href="https://tobycm.github.io/skibidi-penhi/">Pen High Coding Club</a> supported by
+        <a href="https://hackclub.com/">Hack Club</a>
+      </h3>
+      <h3>
+        Lead Coder of
+        <a href="https://pentictonrobotics.ca/">Penticton Robotics</a>
+      </h3>
+      <br />
+      <p><i>a simple website doesn't mean it's a bad website</i></p>
+      <br />
 
-    <h2>=> Currently a high school student</h2>
-    <h2>=> Top 127th on <a href="https://www.codingame.com/multiplayer/clashofcode/leaderboard">CodinGame Clash of Code</a></h2>
+      <h1>Projects:</h1>
+    </div>
+    <br />
 
-    <h3>Application programming projects:</h3>
+    <div class="projects">
+      <div class="project">
+        <a href="https://qr.tobycm.dev"> <img src="./projects/qr.tobycm.dev preview.png" alt="qr.tobycm.dev preview" /> </a>
+        <div class="projectDescription">
+          <h2>QR Code Generator</h2>
+          <p>Quick and easy QR code generator for your links, phone number, etc</p>
+          <a href="https://qr.tobycm.dev">https://qr.tobycm.dev</a>
+        </div>
+      </div>
+
+      <div class="project">
+        <a href="https://tobycm.github.io/raver/welcome/"> <img src="./projects/raver.tobycm.dev preview.png" alt="raver.tobycm.dev preview" /> </a>
+        <div class="projectDescription">
+          <h2>Raver</h2>
+          <p>
+            Rave to the music!! Make a light party with your music that is all processing locally :) Sync up multiple devices and screens for the best
+            homemade light party!
+          </p>
+          <a href="https://tobycm.github.io/raver/welcome/">https://raver.tobycm.dev</a>
+        </div>
+      </div>
+
+      <div class="project">
+        <a href="https://shorl.tobycm.dev"> <img src="./projects/shorl.tobycm.dev preview.png" alt="shorl.tobycm.dev preview" /> </a>
+        <div class="projectDescription">
+          <h2>URL Shortener</h2>
+          <p>Easy to use short link manager</p>
+          <a href="https://shorl.tobycm.dev">https://shorl.tobycm.dev</a>
+        </div>
+      </div>
+
+      <div class="project">
+        <a href="https://rip.tobycm.dev"> <img src="./projects/rip.tobycm.dev preview.png" alt="rip.tobycm.dev preview" /> </a>
+        <div class="projectDescription">
+          <h2>Random Issue Picker</h2>
+          <p>A random GitHub issue picker for a repo</p>
+          <a href="https://rip.tobycm.dev">https://rip.tobycm.dev</a>
+        </div>
+      </div>
+    </div>
+
     <ul>
-      <li>
-        <a href="https://github.com/tobycm/l">Easy to use short link manager</a> - Try it out at
-        <a href="https://shorl.tobycm.dev">shorl.tobycm.dev</a>
-      </li>
-      <li>
-        <a href="https://github.com/tobycm/qr-code-generator-web">Quick and easy QR Code Generator</a> - Try it out at
-        <a href="https://qr.tobycm.dev">qr.tobycm.dev</a>
-      </li>
-      <li>
-        <a href="https://github.com/tobycm/random-issue-picker">A random GitHub issue picker for a repo</a> - Try it out at
-        <a href="https://rip.tobycm.dev">rip.tobycm.dev</a>
-      </li>
       <li>
         <a href="https://github.com/tobycm/pocketbase-blog">Simple blog with PocketBase as backend</a> - Online at
         <a href="https://blog.tobycm.dev">blog.tobycm.dev</a>
@@ -98,7 +140,63 @@
       </li>
     </ul>
 
+    <br />
+
     <h3>Tinkering with some hardware:</h3>
+    <p>
+      Making a hackpad: <a href="https://github.com/hackclub/hackpad/pull/642">Pull Request</a> , Case:
+      <img
+        src="https://raw.githubusercontent.com/tobycm/hackpad/refs/heads/main/hackpads/toby-hackpad/assets/case.png"
+        alt="Toby's Hackpad Case"
+        style="height: 1rem"
+        class="bigZoom" />
+      , Top:
+      <img
+        src="https://raw.githubusercontent.com/tobycm/hackpad/refs/heads/main/hackpads/toby-hackpad/assets/top.png"
+        alt="Toby's Hackpad Top"
+        style="height: 1rem"
+        class="bigZoom" />
+      , PCB:
+      <img
+        src="https://raw.githubusercontent.com/tobycm/hackpad/refs/heads/main/hackpads/toby-hackpad/assets/pcb.png"
+        alt="Toby's Hackpad PCB"
+        style="height: 1rem"
+        class="biggerZoom" />
+      , Schematic:
+      <img
+        src="https://raw.githubusercontent.com/tobycm/hackpad/refs/heads/main/hackpads/toby-hackpad/assets/schematic.png"
+        alt="Toby's Hackpad Schematic"
+        style="height: 1rem"
+        class="midBigZoom" />
+    </p>
+
+    <p>
+      Making a hacker card:
+      <a href="https://github.com/hackclub/OnBoard/pull/1476">Pull Request</a>
+      , Schematic:
+      <img
+        src="https://raw.githubusercontent.com/tobycm/OnBoard/refs/heads/main/projects/tobycm-namecard/assets/schematic.png"
+        alt="Toby's Hacker Card Schematic"
+        style="height: 1rem"
+        class="midBigZoom" />
+      , Design PCB:
+      <img
+        src="https://raw.githubusercontent.com/tobycm/OnBoard/refs/heads/main/projects/tobycm-namecard/assets/design_pcb.png"
+        alt="Toby's Hacker Card PCB"
+        style="height: 1rem"
+        class="midBigZoom" />
+
+      , printed PCB:
+      <img
+        src="https://raw.githubusercontent.com/tobycm/OnBoard/refs/heads/main/projects/tobycm-namecard/assets/printed_pcb.png"
+        alt="Toby's Hacker Card Printed PCB"
+        style="height: 1rem"
+        class="biggerZoom" />
+    </p>
+
+    <!-- TODO: add bakebuild -->
+    <!-- TODO: add more hackclub stuff -->
+
     <p>
       Mostly how I self taught myself about servers and Linux:
       <a href="https://www.reddit.com/r/homelab/comments/13krl7t/0_dollar_home_lab_in_basement/">Reddit post</a>
@@ -109,17 +207,11 @@
       Demo: <a href="https://youtu.be/sH1NHUF4jtQ">https://youtu.be/sH1NHUF4jtQ</a>
     </p>
 
-    <p>Member of <a href="https://pentictonrobotics.ca" target="_blank" rel="noopener noreferrer">Penticton Robotics</a> - Lead Coder</p>
+    <br />
 
-    <h3>Services:</h3>
-    <ul>
-      <li>QR Code Generator: <a href="https://qr.tobycm.dev">https://qr.tobycm.dev</a></li>
-      <li>URL Shortener: <a href="https://shorl.tobycm.dev">https://shorl.tobycm.dev</a></li>
-      <li>Random Issue Picker: <a href="https://rip.tobycm.dev">https://rip.tobycm.dev</a></li>
-    </ul>
-
+    <h4>Top 50th (World), 6th (Canada) on <a href="https://www.codingame.com/multiplayer/clashofcode/leaderboard">CodinGame Clash of Code</a></h4>
     <h3>
-      There are more links on my
+      There are more projects on my
       <a href="https://github.com/tobycm">GitHub profile</a>
     </h3>
 
@@ -131,7 +223,8 @@
     <hr />
 
     <footer>
-      Copyright © <span id="year">2024</span> toby@vsus.app | GitHub: <a href="https://github.com/tobycm/tobycm.dev">tobycm/tobycm.dev</a>
+      Copyright © <span id="year">2025</span> toby@vsus.app | GitHub: <a href="https://github.com/tobycm/tobycm.dev">tobycm/tobycm.dev</a> |
+      <a href="./resume 2025.pdf">maximizing shareholders value</a>
     </footer>
   </body>
 </html>

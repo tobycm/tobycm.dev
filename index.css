@@ -30,6 +30,8 @@ body {
   width: 90vw;
 
   font-size: 1.2rem;
+
+  transition: background-color 0.5s ease-in-out;
 }
 
 ul li {
@@ -41,4 +43,83 @@ ul li {
   cursor: pointer;
   border: none;
   margin-top: 1.125rem;
+}
+
+#logo {
+  width: 32px;
+  height: auto;
+}
+
+img {
+  transition: scale 0.5s ease-in-out, border-radius 0.5s ease-in-out;
+}
+
+img:hover {
+  scale: 2;
+  border-radius: 0 !important;
+}
+
+#logo:hover {
+  scale: 3;
+}
+
+.bigZoom:hover {
+  scale: 25;
+}
+
+.midBigZoom:hover {
+  scale: 40;
+}
+
+.biggerZoom:hover {
+  scale: 50;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.project {
+  border-radius: 2rem;
+  border: 5px dashed var(--primary-color);
+
+  display: flex;
+
+  flex-direction: row;
+
+  height: 30vh;
+  width: 40vw;
+
+  @media screen and (max-width: 1024px) {
+    height: unset;
+    width: 90vw;
+  }
+
+  @media screen and (max-width: 1024px) {
+    flex-direction: column;
+  }
+
+  margin: 1rem;
+}
+
+.project img {
+  border-radius: 1.85rem 0 0 1.85rem;
+  height: 100%;
+}
+
+.projectDescription {
+  padding: 1rem;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
