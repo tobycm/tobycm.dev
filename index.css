@@ -34,6 +34,10 @@ body {
   transition: background-color 0.5s ease-in-out;
 }
 
+h1 {
+  font-size: 3.25rem;
+}
+
 ul li {
   margin-bottom: 0.5rem;
 }
@@ -55,28 +59,38 @@ img {
 }
 
 img:hover {
-  scale: 2;
-  border-radius: 0 !important;
+  @media screen and (min-width: 1024px) {
+    scale: 2;
+    border-radius: 0 !important;
+  }
 }
 
 #logo:hover,
 #logo:active {
-  scale: 4;
+  @media screen and (min-width: 1024px) {
+    scale: 4;
+  }
 }
 
 .bigZoom:hover,
 .bigZoom:active {
-  scale: 25;
+  @media screen and (min-width: 1024px) {
+    scale: 25;
+  }
 }
 
 .midBigZoom:hover,
 .midBigZoom:active {
-  scale: 40;
+  @media screen and (min-width: 1024px) {
+    scale: 40;
+  }
 }
 
 .biggerZoom:hover,
 .biggerZoom:active {
-  scale: 50;
+  @media screen and (min-width: 1024px) {
+    scale: 50;
+  }
 }
 
 h1,
@@ -100,6 +114,10 @@ p {
 
   height: 30vh;
   width: 40vw;
+
+  @media screen and (max-width: 1600px) {
+    width: 80vw;
+  }
 
   @media screen and (max-width: 1024px) {
     height: unset;
@@ -136,4 +154,10 @@ p {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+#hoverTip {
+  @media screen and (max-width: 1024px) {
+    display: none;
+  }
 }
