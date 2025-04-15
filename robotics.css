@@ -1,10 +1,15 @@
 #opening > img {
+  position: relative;
   margin: 0.5vw;
   transform-origin: top;
   width: auto;
   height: 40vh;
   max-width: 90vw;
   object-fit: contain;
+}
+
+#opening > img:hover {
+  z-index: 10;
 }
 
 #opening > img:not(:first-child) {
@@ -84,4 +89,31 @@
     font-size: 1.5rem;
     text-align: center;
   }
+}
+
+#xd {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: end;
+
+  @media screen and (max-width: 960px) {
+    /* Align img center */
+    margin-top: 20vh;
+    justify-content: center;
+  }
+}
+
+#xd img {
+  scale: 1;
+  height: 20vh;
+  width: auto;
+}
+
+#xd img:first-child {
+  height: 12vh;
+  margin: 1vh 1vw;
+
+  translate: 0 25px;
 }
