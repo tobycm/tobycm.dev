@@ -1,0 +1,39 @@
+img {
+  transition: scale 0.5s ease-in-out, border-radius 0.5s ease-in-out;
+}
+
+img:hover {
+  @media screen and (min-width: 1024px) {
+    scale: 2;
+    border-radius: 0 !important;
+  }
+}
+
+.bigZoom:hover,
+.bigZoom:active {
+  @media screen and (min-width: 1024px) {
+    scale: 25;
+  }
+}
+
+.midBigZoom:hover,
+.midBigZoom:active {
+  @media screen and (min-width: 1024px) {
+    scale: 40;
+  }
+}
+
+.biggerZoom:hover,
+.biggerZoom:active {
+  @media screen and (min-width: 1024px) {
+    scale: 50;
+  }
+}
+
+.startLeft {
+  transform-origin: left;
+}
+
+.startRight {
+  transform-origin: right;
+}

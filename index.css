@@ -1,68 +1,6 @@
-@font-face {
-  font-family: "Ubuntu";
-  font-weight: 400;
-  font-style: normal;
-  src: url("fonts/ubuntu-latin-400-normal.woff2") format("woff2"), url("fonts/ubuntu-latin-400-normal.woff") format("woff");
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Ubuntu";
-  font-weight: 700;
-  font-style: normal;
-  src: url("fonts/ubuntu-latin-700-normal.woff2") format("woff2"), url("fonts/ubuntu-latin-700-normal.woff") format("woff");
-  font-display: swap;
-}
-
-body {
-  font-family: Ubuntu, system-ui, sans-serif;
-
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-
-  margin: 1.5rem auto;
-
-  @media screen and (min-width: 1024px) {
-    width: 70vw;
-  }
-
-  width: 90vw;
-
-  font-size: 1.2rem;
-
-  transition: background-color 0.5s ease-in-out;
-}
-
-h1 {
-  font-size: 3.25rem;
-}
-
-ul li {
-  margin-bottom: 0.5rem;
-}
-
-#themeButton {
-  font-size: 2rem;
-  cursor: pointer;
-  border: none;
-  margin-top: 1.125rem;
-}
-
 #logo {
   width: 32px;
   height: auto;
-}
-
-img {
-  transition: scale 0.5s ease-in-out, border-radius 0.5s ease-in-out;
-}
-
-img:hover {
-  @media screen and (min-width: 1024px) {
-    scale: 2;
-    border-radius: 0 !important;
-  }
 }
 
 #logo:hover,
@@ -70,38 +8,6 @@ img:hover {
   @media screen and (min-width: 1024px) {
     scale: 4;
   }
-}
-
-.bigZoom:hover,
-.bigZoom:active {
-  @media screen and (min-width: 1024px) {
-    scale: 25;
-  }
-}
-
-.midBigZoom:hover,
-.midBigZoom:active {
-  @media screen and (min-width: 1024px) {
-    scale: 40;
-  }
-}
-
-.biggerZoom:hover,
-.biggerZoom:active {
-  @media screen and (min-width: 1024px) {
-    scale: 50;
-  }
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin: 0;
-  padding: 0;
 }
 
 .project {
