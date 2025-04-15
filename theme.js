@@ -9,19 +9,19 @@ function setTheme(theme) {
   /** @type {HTMLLinkElement} */
   const css = document.getElementById("theme");
 
-  if (!theme) theme = css.href.endsWith("light.css") ? "dark.css" : "light.css";
+  if (!theme) theme = css.href.endsWith("light.css") ? "/dark.css" : "/light.css";
 
   css.href = theme;
 
   localStorage.setItem("theme", theme);
 
-  document.getElementById("themeButton").textContent = theme === "light.css" ? "🔆" : "🌙";
+  document.getElementById("themeButton").textContent = theme === "/light.css" ? "🔆" : "🌙";
 }
 
 let theme = localStorage.getItem("theme");
 
 const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
 
-if (!theme && prefersDarkScheme.matches) theme = "dark.css";
+if (!theme && prefersDarkScheme.matches) theme = "/dark.css";
 
 setTheme(theme);
