@@ -9,7 +9,7 @@ function setTheme(theme) {
   /** @type {HTMLLinkElement} */
   const css = document.getElementById("theme");
 
-  if (!theme) theme = css.href.endsWith("light.css") ? "/dark.css" : "/light.css";
+  if (!theme) theme = css.href.includes("light.css") ? "/dark.css" : "/light.css";
 
   css.href = theme;
 
@@ -19,6 +19,9 @@ function setTheme(theme) {
 }
 
 let theme = localStorage.getItem("theme");
+
+if (theme === "dark.css") theme = "/dark.css";
+if (theme === "light.css") theme = "/light.css";
 
 const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
 
