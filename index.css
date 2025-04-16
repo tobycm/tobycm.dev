@@ -10,6 +10,35 @@
   }
 }
 
+#textContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media screen and (max-width: 1024px) {
+    align-items: flex-start;
+  }
+}
+
+#textContainer > * {
+  margin-top: 0.75rem;
+}
+
+#clickMe,
+#hoverTip {
+  @media screen and (max-width: 1024px) {
+    display: none;
+  }
+}
+
+#desktopTip {
+  display: none;
+
+  @media screen and (max-width: 1024px) {
+    display: block;
+  }
+}
+
 .project {
   border-radius: 2rem;
   border: 5px dashed var(--primary-color);
@@ -60,10 +89,4 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-}
-
-#hoverTip {
-  @media screen and (max-width: 1024px) {
-    display: none;
-  }
 }

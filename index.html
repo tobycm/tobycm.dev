@@ -33,7 +33,7 @@
       <button onclick="setTheme()" id="themeButton">🔆</button>
     </div>
 
-    <div style="display: flex; flex-direction: column; align-items: center">
+    <div id="textContainer">
       <div style="display: flex; align-items: center">
         <h1>Hey! I'm Toby Cm<img src="/logo.svg" id="logo" alt="toby cm's logo" style="margin-left: 0.5rem" /></h1>
         <small id="hoverTip">&nbsp;hover over images!</small>
@@ -45,15 +45,15 @@
         <a href="https://hackclub.com/">Hack Club</a>
       </h3>
       <a href="/robotics" class="exclude">
-        <h3 style="color: var(--primary-color); text-align: center">
-          Lead Coder of Penticton Robotics &mdash; 🎆 2025 ReefScape&trade; Champion 🏅🎆
-        </h3>
-        <p style="color: gray; text-align: center; font-size: smaller">click me to find out more</p>
+        <h3 style="color: var(--primary-color)">Lead Coder of Penticton Robotics &mdash; 🎆 2025 ReefScape&trade; Champion 🏅🎆</h3>
+      </a>
+      <a href="/robotics" class="exclude" id="clickMe">
+        <p style="color: gray; font-size: smaller">click me to find out more</p>
       </a>
       <h3>Third year at Penticton Secondary</h3>
       <br />
       <!-- <p><i>a simple website doesn't mean it's a bad website</i></p> -->
-      <p><i>for the best experience, check out this website on a desktop</i></p>
+      <p id="desktopTip"><i>for the best experience, check out this website on a desktop</i></p>
 
       <br />
 
