@@ -8,10 +8,6 @@
   object-fit: contain;
 }
 
-#opening > img:hover {
-  z-index: 10;
-}
-
 #opening > img:not(:first-child) {
   @media screen and (max-width: 1166px) {
     display: none;
