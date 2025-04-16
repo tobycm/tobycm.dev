@@ -9,7 +9,7 @@
 }
 
 #opening > img:not(:first-child) {
-  @media screen and (max-width: 1166px) {
+  @media screen and (max-width: 1280px) {
     display: none;
   }
 }
