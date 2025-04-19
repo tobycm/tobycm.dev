@@ -1,0 +1,12 @@
+#appleCat {
+  width: max(5vw, 5vh);
+  height: max(5vw, 5vh);
+  animation: bounce 2200s infinite linear;
+  position: fixed;
+  scale: 1;
+  z-index: 50;
+}
+
+#appleCat:hover {
+  animation-play-state: paused;
+}
