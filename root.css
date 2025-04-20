@@ -14,7 +14,7 @@
   font-display: swap;
 }
 
-body {
+#app {
   font-family: Ubuntu, system-ui, sans-serif;
 
   text-rendering: optimizeLegibility;
