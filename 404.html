@@ -17,7 +17,6 @@
     <meta property="og:site_name" content="Toby Cm's Personal Page" />
 
     <link rel="stylesheet" href="/root.css" />
-    <link rel="stylesheet" href="/imgzoom.css" />
 
     <link rel="stylesheet" id="theme" href="/dark.css" />
     <link rel="preload" href="/light.css" as="style" />
@@ -25,7 +24,7 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <a href="/index.html" class="home exclude">&lt;- back to home page</a>
+    <a href="/index.html" class="home">&lt;- back to home page</a>
 
     <div style="left: auto; right: 1vw; position: absolute; z-index: 2">
       <button onclick="setTheme()" id="themeButton">🔆</button>
@@ -46,7 +45,7 @@
 
       <div style="height: 50vh; display: flex; flex-direction: column; align-items: center; justify-content: center">
         <img
-          style="height: 100%; width: auto; scale: 1"
+          style="height: 100%; width: auto"
           src="404.jpg"
           srcset="
             404.jpg        2049w,
@@ -70,7 +69,5 @@
         <h2 style="text-align: center">looks like this page you are trying to access doesn't exist...</h2>
       </div>
     </div>
-
-    <script async src="/anchors.js"></script>
   </body>
 </html>
