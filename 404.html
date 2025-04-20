@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The robotics side of tobycm</title>
+
+    <link rel="shortcut icon" href="/logo.svg" type="image/svg" />
+
+    <meta name="description" content="a sneak peak into tobycm's robotics life" />
+
+    <!-- Open Graph meta tags -->
+    <meta property="og:title" content="Toby Cm's Robotics Life" />
+    <meta property="og:description" content="a sneak peak into tobycm's robotics life" />
+    <meta property="og:image" content="/robotics/happi.webp" />
+    <meta property="og:url" content="https://tobycm.dev/robotics" />
+    <meta property="og:site_name" content="Toby Cm's Personal Page" />
+
+    <link rel="stylesheet" href="/root.css" />
+    <link rel="stylesheet" href="/imgzoom.css" />
+
+    <link rel="stylesheet" id="theme" href="/dark.css" />
+    <link rel="preload" href="/light.css" as="style" />
+
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <a href="/index.html" class="home exclude">&lt;- back to home page</a>
+
+    <div style="left: auto; right: 1vw; position: absolute; z-index: 2">
+      <button onclick="setTheme()" id="themeButton">🔆</button>
+    </div>
+
+    <script src="/theme.js"></script>
+
+    <div id="app">
+      <style>
+        #app {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          height: calc(100vh - 3rem - 1rem - 5vh);
+        }
+      </style>
+
+      <div style="height: 50vh; display: flex; flex-direction: column; align-items: center; justify-content: center">
+        <img
+          style="height: 100%; width: auto; scale: 1"
+          src="404.jpg"
+          srcset="
+            404.jpg        2049w,
+            404/x2048.webp 2048w,
+            404/x2048.png  2048w,
+            404/x1536.webp 1536w,
+            404/x1536.png  1536w,
+            404/x1024.webp 1024w,
+            404/x1024.png  1024w,
+            404/x768.webp   768w,
+            404/x768.png    768w,
+            404/x512.webp   512w,
+            404/x512.png    512w,
+            404/x384.webp   384w,
+            404/x384.png    384w,
+            404/x256.webp   256w,
+            404/x256.png    256w,
+            404/x192.webp   192w,
+            404/x192.png    192w
+          " />
+        <h2 style="text-align: center">looks like this page you are trying to access doesn't exist...</h2>
+      </div>
+    </div>
+
+    <script async src="/anchors.js"></script>
+  </body>
+</html>
