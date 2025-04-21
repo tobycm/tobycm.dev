@@ -1,23 +1,7 @@
 :root {
-  --primary-color: #ffcc00;
-}
-
-body {
-  background-color: #1e1e1e;
-}
-
-* {
-  color: #e6e6e6;
-}
-
-a {
-  color: #ffcc00;
-}
-
-input {
-  background-color: #333;
-}
-
-button {
-  background-color: #333;
+  --primary-color-hue: 48deg;
+  --primary-color: hsl(var(--primary-color-hue), 100%, 50%);
+  --background-color: #1e1e1e;
+  --text-color: #e6e6e6;
+  --interactive-background-color: #333;
 }

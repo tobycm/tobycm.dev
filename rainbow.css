@@ -1,0 +1,25 @@
+a {
+  filter: hue-rotate(var(--primary-color-hue));
+  color: var(--primary-color);
+
+  animation: rainbowLink 2s linear infinite;
+  animation-play-state: paused;
+}
+
+a:hover {
+  animation-play-state: running;
+}
+
+a:has(> img) {
+  filter: none;
+  animation: none;
+}
+
+@keyframes rainbowLink {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}

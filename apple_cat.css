@@ -1,3 +1,5 @@
+@import url("/bounce.css");
+
 #appleCat {
   width: max(5vw, 5vh);
   height: max(5vw, 5vh);

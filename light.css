@@ -1,7 +1,6 @@
 :root {
-  --primary-color: black;
-}
-
-body {
-  background-color: lightpink;
+  --primary-color-hue: 240deg;
+  --primary-color: hsl(var(--primary-color-hue), 100%, 50%);
+  --background-color: lightpink;
+  --text-color: black;
 }
