@@ -22,9 +22,16 @@
     <link rel="preload" href="/light.css" as="style" />
 
     <link rel="stylesheet" href="index.css" />
+
+    <link rel="stylesheet" href="https://tobycm.github.io/easy-snow/snow.css" />
+    <script>
+      const now = new Date();
+      document.christmas = now.getMonth() > 9 || now.getMonth() < 3; // Nov to Mar
+    </script>
+    <script src="https://tobycm.github.io/easy-snow/snow.js"></script>
   </head>
   <body>
-    <a href="/index.html" class="home">&lt;- back to home page</a>
+    <a href="/" class="home">&lt;- back to home page</a>
 
     <div style="left: auto; right: 1vw; position: absolute; z-index: 2">
       <button onclick="setTheme()" id="themeButton">🔆</button>
