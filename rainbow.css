@@ -2,11 +2,15 @@ a {
   filter: hue-rotate(var(--primary-color-hue));
   color: var(--primary-color);
 
+  transition: color 0.3s cubic-bezier(0.66, 0, 0.34, 1), background-color 0.3s cubic-bezier(0.66, 0, 0.34, 1);
+
   animation: rainbowLink 2s linear infinite;
   animation-play-state: paused;
 }
 
 a:hover {
+  color: var(--background-color);
+  background-color: var(--primary-color);
   animation-play-state: running;
 }
 

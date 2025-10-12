@@ -1,6 +1,7 @@
 img {
   position: relative;
-  transition: scale 0.5s ease-in-out, border-radius 0.5s ease-in-out, z-index 0.5s ease-in-out;
+  transition: scale 0.5s cubic-bezier(0.66, 0, 0.34, 1), border-radius 0.5s cubic-bezier(0.66, 0, 0.34, 1),
+    z-index 0.5s cubic-bezier(0.66, 0, 0.34, 1);
   z-index: 1;
 }
 
@@ -15,10 +16,17 @@ img:hover {
   }
 }
 
+.zoom:hover,
+.zoom:active {
+  @media screen and (min-width: 1024px) {
+    scale: 3;
+  }
+}
+
 .bigZoom:hover,
 .bigZoom:active {
   @media screen and (min-width: 1024px) {
-    scale: 25;
+    scale: 8;
   }
 }
 
