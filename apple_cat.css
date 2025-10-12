@@ -1,8 +1,8 @@
 @import url("/bounce.css");
 
 #appleCat {
-  width: max(5vw, 5vh);
-  height: max(5vw, 5vh);
+  width: max(4vw, 4vh);
+  height: max(4vw, 4vh);
   animation: bounce 2200s infinite linear;
   position: fixed;
   scale: 1;
