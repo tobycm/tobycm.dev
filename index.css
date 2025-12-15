@@ -1,3 +1,11 @@
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition-duration: 0s !important;
+  }
+}
+
+
 #logo {
   width: 3rem;
   height: auto;

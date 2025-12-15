@@ -12,3 +12,10 @@
 #appleCat:hover {
   animation-play-state: paused;
 }
+
+
+@media (prefers-reduced-motion: reduce) {
+  #appleCat {
+    animation: none !important;
+  }
+}
