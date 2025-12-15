@@ -1,289 +1,542 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="preconnect" href="https://tobycm.github.io" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="shortcut icon" href="/logo.svg" type="image/svg" />
+  <link rel="preconnect" href="https://tobycm.github.io" />
 
-    <meta name="description" content="Toby Cm is a passionate high school student doing DevOps with friends. Based in Penticton, BC, Canada!" />
+  <link rel="shortcut icon" href="/logo.svg" type="image/svg" />
 
-    <!-- Open Graph meta tags -->
-    <meta property="og:title" content="Toby Cm's Personal Page" />
-    <meta property="og:description" content="Passionate high school student with programming, robotics, and friends :)" />
-    <meta property="og:image" content="/logo.png" />
-    <meta property="og:url" content="https://tobycm.dev/" />
-    <meta property="og:site_name" content="Toby Cm's Personal Page" />
+  <meta name="description" content="Professional coder and yapper, hardware and software enjoyer." />
 
-    <link rel="stylesheet" href="/root.css" />
-    <link rel="stylesheet" href="/imgzoom.css" />
+  <!-- Open Graph meta tags -->
+  <meta property="og:title" content="Toby Cm's Personal Page" />
+  <meta property="og:description" content="Professional coder and yapper, hardware and software enjoyer." />
+  <meta property="og:image" content="/logo.png" />
+  <meta property="og:url" content="https://tobycm.dev/" />
+  <meta property="og:site_name" content="Toby Cm's Personal Page" />
 
-    <link rel="stylesheet" id="theme" href="/dark.css" />
-    <link rel="preload" href="/light.css" as="style" />
+  <link rel="stylesheet" href="/root.css" />
+  <link rel="stylesheet" href="/imgzoom.css" />
 
-    <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" id="theme" href="/dark.css" />
+  <link rel="preload" href="/light.css" as="style" />
 
-    <link rel="stylesheet" href="/apple_cat.css" />
+  <link rel="stylesheet" href="index.css" />
 
-    <link rel="stylesheet" href="https://tobycm.github.io/easy-snow/snow.css" />
-    <script>
-      const now = new Date();
-      document.christmas = now.getMonth() > 9 || now.getMonth() < 3; // Nov to Mar
-    </script>
-    <script src="https://tobycm.github.io/easy-snow/snow.js"></script>
+  <link rel="stylesheet" href="/apple_cat.css" />
 
-    <script src="https://tobycm.github.io/simple-slideshow/slideshow.js"></script>
-    <link rel="stylesheet" href="https://tobycm.github.io/simple-slideshow/slideshow.css" />
+  <link rel="stylesheet" href="https://tobycm.github.io/easy-snow/snow.css" />
+  <script>
+    const now = new Date();
+    document.christmas = now.getMonth() > 9 || now.getMonth() < 3; // Nov to Mar
+  </script>
+  <script src="https://tobycm.github.io/easy-snow/snow.js"></script>
 
-    <title>Toby Cm</title>
-  </head>
+  <script src="https://tobycm.github.io/simple-slideshow/slideshow.js"></script>
+  <link rel="stylesheet" href="https://tobycm.github.io/simple-slideshow/slideshow.css" />
 
-  <body>
-    <div style="float: right">
-      <button onclick="setTheme()" id="themeButton">🔆</button>
+  <title>Toby Cm</title>
+</head>
+
+<body>
+  <div style="float: right">
+    <button onclick="setTheme()" id="themeButton">🔆</button>
+  </div>
+
+  <img id="appleCat" src="/apple_cat.gif" alt="apple cat bouncing around :3" />
+
+  <script src="/theme.js"></script>
+
+  <div id="app">
+    <div id="textContainer">
+      <div id="intro">
+        <div id="name">
+          <h1>Toby Cm<img src="/logo.svg" id="logo" alt="toby cm's logo" style="margin-left: 0.5rem" /></h1>
+          <a href="mailto:toby@vsus.app">toby@vsus.app</a>
+        </div>
+
+        <div id="status">
+          <p>Professional coder, yapper, hardware and software enjoyer.</p>
+          <audio src="./chess type beat ⧸⧸ tiktok dance minecraft music ♪ [yvyA1yiyxgI].mp3" controls></audio>
+        </div>
+
+        <div id="pr-role">
+          <a href="/robotics" class="exclude">
+            Lead Coder of Penticton Robotics &mdash; 🎆 2025 ReefScape&trade; Champion 🏅🎆
+          </a>
+        </div>
+
+        <div id="club-role">
+          <p>Leader of <a href="https://tobycm.github.io/skibidi-penhi/">Pen High Coding Club</a> supported by
+            <a href="https://hackclub.com/">Hack Club</a>
+          </p>
+        </div>
+
+        <div id="greyback-role">
+          <p><s>Summer student</s> Part time software/hardware eng? at Greyback Construction</p>
+        </div>
+
+        <div id="school-year">
+          <p>Graduation year at Penticton Secondary</p>
+        </div>
+      </div>
+
+      <p id="desktopTip"><i>for the best experience, check out this website on a desktop</i></p>
+      <br />
     </div>
+    <hr />
+    <h1 style="text-align: center">Projects:</h1>
+    <br />
 
-    <img id="appleCat" src="/apple_cat.gif" alt="apple cat bouncing around :3" />
+    <div class="slideshow">
+      <p class="prev">⬅️</p>
+      <p class="next">➡️</p>
 
-    <script src="/theme.js"></script>
-
-    <div id="app">
-      <div id="textContainer">
-        <div style="display: flex; align-items: center">
-          <h1>Hey! I'm Toby Cm<img src="/logo.svg" id="logo" alt="toby cm's logo" style="margin-left: 0.5rem" /></h1>
-          <small id="hoverTip">&nbsp;hover over images!</small>
-        </div>
-        <h3>Professional coder and yapper</h3>
-        <br />
-        <h3>
-          Leader of <a href="https://tobycm.github.io/skibidi-penhi/">Pen High Coding Club</a> supported by
-          <a href="https://hackclub.com/">Hack Club</a>
-        </h3>
-        <h3><a href="/robotics" class="exclude"> Lead Coder of Penticton Robotics &mdash; 🎆 2025 ReefScape&trade; Champion 🏅🎆 </a></h3>
-        <a href="/robotics" class="exclude" id="clickMe">
-          <p style="color: gray; font-size: smaller">click me to find out more</p>
+      <div class="slide project">
+        <a href="https://meowsic.tobycm.dev" class="image">
+          <img src="./projects/meowsic.tobycm.dev preview.png" alt="meowsic.tobycm.dev preview" class="image" />
         </a>
-        <h3>Third year at Penticton Secondary</h3>
-        <br />
-        <!-- <p><i>a simple website doesn't mean it's a bad website</i></p> -->
-        <p id="desktopTip"><i>for the best experience, check out this website on a desktop</i></p>
-        <br />
-        <audio src="./chess type beat ⧸⧸ tiktok dance minecraft music ♪ [yvyA1yiyxgI].mp3" controls></audio>
-      </div>
-      <hr />
-      <h1 style="text-align: center">Projects:</h1>
-      <br />
-      <div class="projects">
-        <div class="project">
-          <a href="https://qr.tobycm.dev"> <img src="./projects/qr.tobycm.dev preview.png" alt="qr.tobycm.dev preview" class="startLeft" /> </a>
-          <div class="projectDescription">
-            <h2>QR Code Generator</h2>
-            <p>Quick and easy QR code generator for your links, phone number, etc</p>
-            <a href="https://qr.tobycm.dev">qr.tobycm.dev</a>
-          </div>
-        </div>
-        <div class="project">
-          <a href="https://tobycm.github.io/raver/welcome/">
-            <img src="./projects/raver.tobycm.dev preview.png" alt="raver.tobycm.dev preview" class="startRight" />
-          </a>
-          <div class="projectDescription">
-            <h2>Raver</h2>
-            <p>Rave to the music!! Sync up multiple devices and screens for the best homemade light party!</p>
-            <a href="https://tobycm.github.io/raver/welcome/">raver.tobycm.dev</a>
-          </div>
-        </div>
-        <div class="project">
-          <a href="https://emochoice.ca"> <img src="./projects/emochoice.ca preview.png" alt="emochoice.ca preview" class="startLeft" /> </a>
-          <div class="projectDescription">
-            <h2>Emochoice Web store</h2>
-            <p>
-              The web store of Emochoice, made in collaboration with
-              <a href="https://github.com/pdt1806">@pdt1806</a>
-            </p>
-            <a href="https://emochoice.ca">emochoice.ca</a>
-          </div>
-        </div>
-        <div class="project">
-          <a href="https://pentictonrobotics.ca">
-            <img src="./projects/pentictonrobotics.ca preview.png" alt="pentictonrobotics.ca preview" class="startRight" />
-          </a>
-          <div class="projectDescription">
-            <h2>Penticton Robotics</h2>
-            <p>FRC Team #8339 &mdash; a robotics team from Penticton, BC, Canada.</p>
-            <a href="https://pentictonrobotics.ca">pentictonrobotics.ca</a>
-          </div>
-        </div>
-        <div class="project">
-          <a href="https://shorl.tobycm.dev">
-            <img src="./projects/shorl.tobycm.dev preview.png" alt="shorl.tobycm.dev preview" class="startLeft" />
-          </a>
-          <div class="projectDescription">
-            <h2>URL Shortener</h2>
-            <p>Easy to use short link manager</p>
-            <a href="https://shorl.tobycm.dev">shorl.tobycm.dev</a>
-          </div>
-        </div>
-        <div class="project">
-          <a href="https://rip.tobycm.dev"> <img src="./projects/rip.tobycm.dev preview.png" alt="rip.tobycm.dev preview" class="startRight" /> </a>
-          <div class="projectDescription">
-            <h2>Random Issue Picker</h2>
-            <p>A random GitHub issue picker for a repo</p>
-            <a href="https://rip.tobycm.dev">rip.tobycm.dev</a>
-          </div>
-        </div>
-      </div>
-      <ul>
-        <li>
-          <a href="https://github.com/tobycm/pocketbase-blog">Simple blog with PocketBase as backend</a> - Online at
-          <a href="https://blog.tobycm.dev">blog.tobycm.dev</a>
-        </li>
-        <li>
-          <a href="https://github.com/tobycm/akatsuki-du-ca-bot-remastered">A Discord bot written in Python</a>
-        </li>
-        <li>
-          <a href="https://github.com/tobycm/minecraft-recipes-api">Minecraft Recipes API</a> - A modern API for retrieving and managing Minecraft
-          recipes using Bun and ElysiaJS. API is online at <a href="https://mc-recp.tobycm.dev">https://mc-recp.tobycm.dev</a>
-        </li>
-        <li>
-          <a href="https://github.com/tobycm/tobycm-music-manager">Manage your downloaded music from a YouTube playlist easily</a> - Used to manage
-          Toby's huge <a href="https://vsus.link/hcm">Happy Coding Music playlist</a>
-        </li>
-      </ul>
-      <hr />
-      <h2>Hardware:</h2>
-      <h3>Trying new stuff outside of my comfort zone: 3D modelling, making electrical schematic, designing PCBs, etc.</h3>
-      <br />
 
-      <!-- <div class="hardwareProjects">
-        <div>
-          <a href="https://raw.githubusercontent.com/tobycm/hackpad/refs/heads/main/hackpads/toby-hackpad/assets/case.png" target="_blank">
+        <div class="description">
+          <h2>Meowsic</h2>
+          <p>a tiny and beautiful frontend and backend to host your music files :3</p>
+          <a href="https://meowsic.tobycm.dev">meowsic.tobycm.dev</a>
+        </div>
+      </div>
+
+      <div class="slide project">
+        <div class="square4image image">
+          <a href="https://raw.githubusercontent.com/tobycm/skibidi-uwu-pad/refs/heads/main/assets/overview.png"
+            target="_blank">
+            <img src="https://raw.githubusercontent.com/tobycm/skibidi-uwu-pad/refs/heads/main/assets/overview.png"
+              alt="skibidi-uwu-pad PCB 3D Render" fetchPriority="low" loading="lazy" />
+          </a>
+
+          <a href="https://raw.githubusercontent.com/tobycm/skibidi-uwu-pad/refs/heads/main/assets/front.png"
+            target="_blank">
+            <img src="https://raw.githubusercontent.com/tobycm/skibidi-uwu-pad/refs/heads/main/assets/front.png"
+              alt="skibidi-uwu-pad PCB 3D Front View" fetchPriority="low" loading="lazy" />
+          </a>
+
+          <a href="https://raw.githubusercontent.com/tobycm/skibidi-uwu-pad/refs/heads/main/assets/assembly_overview.png"
+            target="_blank">
+            <img
+              src="https://raw.githubusercontent.com/tobycm/skibidi-uwu-pad/refs/heads/main/assets/assembly_overview.png"
+              alt="skibidi-uwu-pad 3D Assembly Overview" fetchPriority="low" loading="lazy" />
+          </a>
+
+          <a href="https://raw.githubusercontent.com/tobycm/skibidi-uwu-pad/refs/heads/main/assets/schematic.png"
+            target="_blank">
+            <img src="https://raw.githubusercontent.com/tobycm/skibidi-uwu-pad/refs/heads/main/assets/schematic.png"
+              alt="skibidi-uwu-pad Schematic" fetchPriority="low" loading="lazy" />
+          </a>
+        </div>
+
+        <div class="description">
+          <h2>skibidi-uwu-pad</h2>
+          <p>me when i osu</p>
+
+          <h3>features:</h3>
+          <ul style="margin: 0;">
+            <li>3 hall effects switches</li>
+            <li>2 cherry mx switches</li>
+            <li>1 rotary encoder with push</li>
+            <li>rgb underglow</li>
+            <li>hot swappable keycaps</li>
+            <li>zmk firmware</li>
+            <li>usb/bluetooth connectivity</li>
+            <li>3.7V li-ion battery</li>
+          </ul>
+
+          <a href="https://github.com/tobycm/skibidi-uwu-pad">github.com/tobycm/skibidi-uwu-pad</a>
+        </div>
+      </div>
+
+      <div class="slide project">
+        <a href="https://qr.tobycm.dev" class="image">
+          <img src="./projects/qr.tobycm.dev preview.png" alt="qr.tobycm.dev preview" class="image" />
+        </a>
+
+        <div class="description">
+          <h2>QR Code Generator</h2>
+          <p>Quick and easy QR code generator for your links, phone number, etc</p>
+          <a href="https://qr.tobycm.dev">qr.tobycm.dev</a>
+        </div>
+      </div>
+
+      <div class="slide project">
+        <a href="https://raw.githubusercontent.com/tobycm/skibidi-usb-hub/refs/heads/main/pcb%20front.png"
+          target="_blank" class="image">
+          <img src="https://raw.githubusercontent.com/tobycm/skibidi-usb-hub/refs/heads/main/pcb%20front.png"
+            alt="skibidi-usb-hub PCB render" class="image" />
+        </a>
+
+        <div class="description">
+          <h2>skibidi-usb-hub</h2>
+          <p>7-port usb hub with some ethernet and an audio out jack.</p>
+
+          <h3>features:</h3>
+
+          <ul style="margin: 0;">
+            <li>1 USB C port for upstream</li>
+            <li>2 USB C ports</li>
+            <li>2 USB A ports</li>
+            <li>2 100M capable Ethernet ports</li>
+            <li>1 Audio Jack (maybe both line in and line out)</li>
+          </ul>
+
+          <a href="https://github.com/tobycm/skibidi-usb-hub">github.com/tobycm/skibidi-usb-hub</a>
+        </div>
+      </div>
+
+      <div class="slide project">
+        <a href="https://tobycm.github.io/raver/welcome/" class="image">
+          <img src="./projects/raver.tobycm.dev preview.png" alt="raver.tobycm.dev preview" class="image" />
+        </a>
+
+        <div class="description">
+          <h2>Raver</h2>
+          <p>Rave to the music!! Sync up multiple devices and screens for the best homemade light party!</p>
+          <a href="https://tobycm.github.io/raver/welcome/">raver.tobycm.dev</a>
+        </div>
+      </div>
+
+      <div class="slide project">
+        <div class="fourcolumnimage image">
+          <a href="https://raw.githubusercontent.com/tobycm/skibidi-album-clicker/refs/heads/main/assets/3d.png"
+            target="_blank">
+            <img src="https://raw.githubusercontent.com/tobycm/skibidi-album-clicker/refs/heads/main/assets/3d.png"
+              alt="skibidi-album-clicker 3D View" fetchPriority="low" loading="lazy" />
+          </a>
+
+          <a href="https://raw.githubusercontent.com/tobycm/skibidi-album-clicker/refs/heads/main/assets/schematic.png"
+            target="_blank">
+            <img
+              src="https://raw.githubusercontent.com/tobycm/skibidi-album-clicker/refs/heads/main/assets/schematic.png"
+              alt="skibidi-album-clicker Schematic" fetchPriority="low" loading="lazy" />
+          </a>
+
+          <a href="https://raw.githubusercontent.com/tobycm/skibidi-album-clicker/refs/heads/main/assets/front_3d.png"
+            target="_blank">
+            <img
+              src="https://raw.githubusercontent.com/tobycm/skibidi-album-clicker/refs/heads/main/assets/front_3d.png"
+              alt="skibidi-album-clicker Front 3D View" fetchPriority="low" loading="lazy" />
+          </a>
+
+          <a href="https://raw.githubusercontent.com/tobycm/skibidi-album-clicker/refs/heads/main/assets/pcb.png"
+            target="_blank">
+            <img src="https://raw.githubusercontent.com/tobycm/skibidi-album-clicker/refs/heads/main/assets/pcb.png"
+              alt="skibidi-album-clicker PCB" fetchPriority="low" loading="lazy" />
+          </a>
+        </div>
+
+        <div class="description">
+          <h2>skibidi-album-clicker</h2>
+          <p>
+            a small christmas gift project that displays small images on a 1.3 inch LCD screen with a rotary encoder to
+            cycle through them. built with seeed xiao rp2040.
+          </p>
+          <a href="https://github.com/tobycm/skibidi-album-clicker">skibidi-album-clicker</a>
+        </div>
+      </div>
+
+      <div class="slide project">
+        <a href="https://emochoice.ca" class="image">
+          <img src="./projects/emochoice.ca preview.png" alt="emochoice.ca preview" class="image" />
+        </a>
+
+        <div class="description">
+          <h2>Emochoice Web store</h2>
+          <p>
+            The web store of Emochoice, made in collaboration with
+            <a href="https://github.com/pdt1806">@pdt1806</a>
+          </p>
+          <a href="https://emochoice.ca">emochoice.ca</a>
+        </div>
+      </div>
+
+      <div class="slide project">
+        <div class="square4image image">
+          <a href="https://raw.githubusercontent.com/tobycm/blahaj-keychain/refs/heads/main/assets/3d.png"
+            target="_blank">
+            <img src="https://raw.githubusercontent.com/tobycm/blahaj-keychain/refs/heads/main/assets/3d.png"
+              alt="Blahaj Keychain 3D Render" fetchPriority="low" loading="lazy" />
+          </a>
+
+          <a href="https://raw.githubusercontent.com/tobycm/blahaj-keychain/refs/heads/main/assets/back_pcb.png"
+            target="_blank">
+            <img src="https://raw.githubusercontent.com/tobycm/blahaj-keychain/refs/heads/main/assets/back_pcb.png"
+              alt="Blahaj Keychain Back PCB" fetchPriority="low" loading="lazy" />
+          </a>
+
+          <a href="https://raw.githubusercontent.com/tobycm/blahaj-keychain/refs/heads/main/assets/schematic.png"
+            target="_blank">
+            <img src="https://raw.githubusercontent.com/tobycm/blahaj-keychain/refs/heads/main/assets/schematic.png"
+              alt="Blahaj Keychain Schematic" fetchPriority="low" loading="lazy" />
+          </a>
+
+          <a href="https://raw.githubusercontent.com/tobycm/blahaj-keychain/refs/heads/main/assets/front_pcb.png"
+            target="_blank">
+            <img src="https://raw.githubusercontent.com/tobycm/blahaj-keychain/refs/heads/main/assets/front_pcb.png"
+              alt="Blahaj Keychain Front PCB" fetchPriority="low" loading="lazy" />
+          </a>
+        </div>
+
+        <div class="description">
+          <h2>Blahaj Keychain</h2>
+          <p>
+            blahaj keychain, perfect for presents :3. built as part of Hack Club's Solder YSWS.
+          </p>
+
+          <h3>Features</h3>
+
+          <ul style="margin: 0;">
+            <li>stay-on LED after pressing the button</li>
+            <li>glow-in-the-dark eye</li>
+            <li>shiny body</li>
+            <li>very cute</li>
+          </ul>
+
+          <a href="https://github.com/tobycm/blahaj-keychain">Blahaj Keychain</a>
+        </div>
+      </div>
+
+      <div class="slide project">
+        <a href="https://pentictonrobotics.ca" class="image">
+          <img src="./projects/pentictonrobotics.ca preview.png" alt="pentictonrobotics.ca preview" class="image" />
+        </a>
+        <div class="description">
+          <h2>Penticton Robotics</h2>
+          <p>FRC Team #8339 &mdash; a robotics team from Penticton, BC, Canada.</p>
+          <a href="https://pentictonrobotics.ca">pentictonrobotics.ca</a>
+        </div>
+      </div>
+
+      <div class="slide project">
+        <a href="https://github.com/tobycm/mea" class="image" style="background-color: #ffc758;">
+          <img src="https://raw.githubusercontent.com/tobycm/mea/refs/heads/main/assets/mea%20bot%20banner.png"
+            alt="mea bot banner" class="image" style="object-fit: contain; background-color: #ffc758;" />
+        </a>
+
+        <div class="description">
+          <h2>mea bot</h2>
+          <p>A Discord bot for downloading media files from various services using the <a
+              href="https://github.com/imputnet/cobalt/tree/main/api">Cobalt API</a>.</p>
+          <p>Invite the bot here: <a
+              href="https://discord.com/oauth2/authorize?client_id=1389427401066545304">https://discord.com/oauth2/authorize?client_id=1389427401066545304</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="slide project">
+        <div class="bigcolumnsmallrowsimage image">
+          <a href="https://raw.githubusercontent.com/tobycm/OnBoard/refs/heads/main/projects/tobycm-namecard/assets/schematic.png"
+            target="_blank" class="big">
+            <img
+              src="https://raw.githubusercontent.com/tobycm/OnBoard/refs/heads/main/projects/tobycm-namecard/assets/schematic.png"
+              alt="Toby's Hacker Card Schematic" fetchPriority="low" loading="lazy" />
+          </a>
+
+          <a href="https://raw.githubusercontent.com/tobycm/OnBoard/refs/heads/main/projects/tobycm-namecard/assets/design_pcb.png"
+            target="_blank">
+            <img
+              src="https://raw.githubusercontent.com/tobycm/OnBoard/refs/heads/main/projects/tobycm-namecard/assets/design_pcb.png"
+              alt="Toby's Hacker Card PCB" fetchPriority="low" loading="lazy" />
+          </a>
+
+          <a href="https://raw.githubusercontent.com/tobycm/OnBoard/refs/heads/main/projects/tobycm-namecard/assets/printed_pcb.png"
+            target="_blank">
+            <img
+              src="https://raw.githubusercontent.com/tobycm/OnBoard/refs/heads/main/projects/tobycm-namecard/assets/printed_pcb.png"
+              alt="Toby's Hacker Card Printed PCB" fetchPriority="low" loading="lazy" />
+          </a>
+        </div>
+
+        <div class="description">
+          <h2>Toby's Hacker Card</h2>
+          <p>
+            nfc business card. includes contact info, a very cool looking qr code and my logo. also has some honourable
+            mentions. designed as part of Hack Club's OnBoard program.
+          </p>
+          <a href="https://github.com/hackclub/OnBoard/pull/1476">Pull Request</a>
+        </div>
+      </div>
+
+      <div class="slide project">
+        <a href="https://file.tobycm.dev" class="image">
+          <img src="./projects/file.tobycm.dev preview.png" alt="file.tobycm.dev preview" class="image" />
+        </a>
+
+        <div class="description">
+          <h2>a very simple file uploader</h2>
+          <p>
+            a very simple file uploader with a minimalistic design and easy to use interface. optional password
+            protection for uploading. contact @tobycm on Discord for access!
+          </p>
+          <a href="https://file.tobycm.dev">file.tobycm.dev</a>
+        </div>
+      </div>
+
+      <div class="slide project">
+        <div class="square4image image">
+          <a href="https://raw.githubusercontent.com/tobycm/hackpad/refs/heads/main/hackpads/toby-hackpad/assets/case.png"
+            target="_blank">
             <img
               src="https://raw.githubusercontent.com/tobycm/hackpad/refs/heads/main/hackpads/toby-hackpad/assets/case.png"
-              alt="Toby's Hackpad Case"
-              class="zoom"
-              fetchPriority="low"
-              loading="lazy"
-          /></a>
-        </div>
-      </div> -->
+              alt="Toby's Hackpad Case" fetchPriority="low" loading="lazy" />
+          </a>
 
-      <p>
-        Making a hackpad: Case:
-        <a href="https://raw.githubusercontent.com/tobycm/hackpad/refs/heads/main/hackpads/toby-hackpad/assets/case.png" target="_blank">
-          <img
-            src="https://raw.githubusercontent.com/tobycm/hackpad/refs/heads/main/hackpads/toby-hackpad/assets/case.png"
-            alt="Toby's Hackpad Case"
-            style="height: 1rem"
-            class="bigZoom"
-            fetchPriority="low"
-            loading="lazy"
-        /></a>
-        , Top:
-        <a href="https://raw.githubusercontent.com/tobycm/hackpad/refs/heads/main/hackpads/toby-hackpad/assets/top.png" target="_blank">
-          <img
-            src="https://raw.githubusercontent.com/tobycm/hackpad/refs/heads/main/hackpads/toby-hackpad/assets/top.png"
-            alt="Toby's Hackpad Top"
-            style="height: 1rem"
-            class="bigZoom"
-            fetchPriority="low"
-            loading="lazy"
-        /></a>
-        , PCB:
-        <a href="https://raw.githubusercontent.com/tobycm/hackpad/refs/heads/main/hackpads/toby-hackpad/assets/pcb.png" target="_blank">
-          <img
-            src="https://raw.githubusercontent.com/tobycm/hackpad/refs/heads/main/hackpads/toby-hackpad/assets/pcb.png"
-            alt="Toby's Hackpad PCB"
-            style="height: 1rem"
-            class="biggerZoom"
-            fetchPriority="low"
-            loading="lazy"
-        /></a>
-        , Schematic:
-        <a href="https://raw.githubusercontent.com/tobycm/hackpad/refs/heads/main/hackpads/toby-hackpad/assets/schematic.png" target="_blank">
-          <img
-            src="https://raw.githubusercontent.com/tobycm/hackpad/refs/heads/main/hackpads/toby-hackpad/assets/schematic.png"
-            alt="Toby's Hackpad Schematic"
-            style="height: 1rem"
-            class="midBigZoom"
-            fetchPriority="low"
-            loading="lazy"
-        /></a>
-        , <a href="https://github.com/hackclub/hackpad/pull/642">Pull Request</a>
-      </p>
-      <p>
-        Making a hacker card: Schematic:
-        <a href="https://raw.githubusercontent.com/tobycm/OnBoard/refs/heads/main/projects/tobycm-namecard/assets/schematic.png" target="_blank">
-          <img
-            src="https://raw.githubusercontent.com/tobycm/OnBoard/refs/heads/main/projects/tobycm-namecard/assets/schematic.png"
-            alt="Toby's Hacker Card Schematic"
-            style="height: 1rem"
-            class="midBigZoom"
-            fetchPriority="low"
-            loading="lazy"
-        /></a>
-        , Design PCB:
-        <a href="https://raw.githubusercontent.com/tobycm/OnBoard/refs/heads/main/projects/tobycm-namecard/assets/design_pcb.png" target="_blank">
-          <img
-            src="https://raw.githubusercontent.com/tobycm/OnBoard/refs/heads/main/projects/tobycm-namecard/assets/design_pcb.png"
-            alt="Toby's Hacker Card PCB"
-            style="height: 1rem"
-            class="midBigZoom"
-            fetchPriority="low"
-            loading="lazy"
-        /></a>
-        , printed PCB:
-        <a href="https://raw.githubusercontent.com/tobycm/OnBoard/refs/heads/main/projects/tobycm-namecard/assets/printed_pcb.png" target="_blank">
-          <img
-            src="https://raw.githubusercontent.com/tobycm/OnBoard/refs/heads/main/projects/tobycm-namecard/assets/printed_pcb.png"
-            alt="Toby's Hacker Card Printed PCB"
-            style="height: 1rem"
-            class="biggerZoom"
-            fetchPriority="low"
-            loading="lazy"
-        /></a>
-        , <a href="https://github.com/hackclub/OnBoard/pull/1476">Pull Request</a>
-      </p>
-      <p>
-        Making a case for my electronics project:
-        <a href="./projects/pcb case and top.jpg" target="_blank"
-          ><img
-            src="./projects/pcb case and top.jpg"
-            alt="Toby's PCB Case and Top for Electronics Project"
-            style="height: 1rem"
-            class="midBigZoom"
-            fetchPriority="low"
-        /></a>
-      </p>
-      <!-- TODO: add bakebuild -->
-      <!-- TODO: add more hackclub stuff -->
-      <!-- TODO: really add more hackclub stuff -->
-      <p>
-        Mostly how I self taught myself about servers and Linux:
-        <a href="https://www.reddit.com/r/homelab/comments/13krl7t/0_dollar_home_lab_in_basement/">Reddit post</a>
-      </p>
-      <p>
-        Hardware + software magic: <a href="https://github.com/tobycm/loginfc">https://github.com/tobycm/loginfc</a> - Homemade security system :D -
-        Demo: <a href="https://youtu.be/sH1NHUF4jtQ">https://youtu.be/sH1NHUF4jtQ</a>
-      </p>
-      <br />
-      <h4>Top 50th (World), 6th (Canada) on <a href="https://www.codingame.com/multiplayer/clashofcode/leaderboard">CodinGame Clash of Code</a></h4>
-      <h3>
-        Check out more projects on my
-        <a href="https://github.com/tobycm">GitHub profile</a>
-      </h3>
-      <h3>
-        Feel free to contact me at
-        <a href="mailto:toby@vsus.app">toby@vsus.app</a>
-      </h3>
-      <footer>
-        <hr />
-        Copyright © <span id="year">2025</span> <a href="mailto:toby@vsus.app">toby@vsus.app</a> | GitHub:
-        <a href="https://github.com/tobycm/tobycm.dev">tobycm/tobycm.dev</a> | <a href="./resume oct 2025.pdf">maximizing shareholders value</a> |
-        shoutout to my friend who want to take over las vegas
-      </footer>
+          <a href="https://raw.githubusercontent.com/tobycm/hackpad/refs/heads/main/hackpads/toby-hackpad/assets/top.png"
+            target="_blank">
+            <img
+              src="https://raw.githubusercontent.com/tobycm/hackpad/refs/heads/main/hackpads/toby-hackpad/assets/top.png"
+              alt="Toby's Hackpad Top" fetchPriority="low" loading="lazy" />
+          </a>
+
+          <a href="https://raw.githubusercontent.com/tobycm/hackpad/refs/heads/main/hackpads/toby-hackpad/assets/pcb.png"
+            target="_blank">
+            <img
+              src="https://raw.githubusercontent.com/tobycm/hackpad/refs/heads/main/hackpads/toby-hackpad/assets/pcb.png"
+              alt="Toby's Hackpad PCB" fetchPriority="low" loading="lazy" />
+          </a>
+
+          <a href="https://raw.githubusercontent.com/tobycm/hackpad/refs/heads/main/hackpads/toby-hackpad/assets/schematic.png"
+            target="_blank">
+            <img
+              src="https://raw.githubusercontent.com/tobycm/hackpad/refs/heads/main/hackpads/toby-hackpad/assets/schematic.png"
+              alt="Toby's Hackpad Schematic" fetchPriority="low" loading="lazy" />
+          </a>
+        </div>
+
+        <div class="description">
+          <h2>Hackpad</h2>
+          <p>A YSWS from Hack Club to design your own macropad (a very simple keyboard with only a few buttons)</p>
+        </div>
+
+      </div>
+
+      <div class="slide project">
+        <a href="https://shorl.tobycm.dev" class="image">
+          <img src="./projects/shorl.tobycm.dev preview.png" alt="shorl.tobycm.dev preview" class="image" />
+        </a>
+        <div class="description">
+          <h2>URL Shortener</h2>
+          <p>Easy to use short link manager</p>
+          <a href="https://shorl.tobycm.dev">shorl.tobycm.dev</a>
+        </div>
+      </div>
+
+      <div class="slide project">
+        <a href="./projects/pcb case and top.jpg" target="_blank" class="image">
+          <img src="./projects/pcb case and top.jpg" alt="Toby's PCB Case and Top for Electronics Project"
+            class="image" />
+        </a>
+        <div class="description">
+          <h2>Electronics Project Case</h2>
+          <p>A case and top for my electronics project PCB</p>
+          <a href="./projects/pcb case and top.jpg" target="_blank">View Image</a>
+        </div>
+      </div>
+
+      <div class="slide project">
+        <a href="https://rip.tobycm.dev" class="image">
+          <img src="./projects/rip.tobycm.dev preview.png" alt="rip.tobycm.dev preview" class="image" />
+        </a>
+        <div class="description">
+          <h2>Random Issue Picker</h2>
+          <p>A random GitHub issue picker for a repo</p>
+          <a href="https://rip.tobycm.dev">rip.tobycm.dev</a>
+        </div>
+      </div>
+
+      <div class="slide projectsList">
+        <ul>
+          <li>
+            <a href="https://github.com/tobycm/akatsuki-du-ca-bot-remastered">A Discord bot written in Python</a>
+          </li>
+
+          <li>
+            <a href="https://github.com/tobycm/easy-snow">easy-snow</a> - easy snow effect for websites!!! - used on
+            this very site! :D
+            <br>
+            Another demo site: <a href="https://tobycm.github.io/easy-snow/">https://tobycm.github.io/easy-snow/</a>
+          </li>
+
+          <li>
+            <a href="https://github.com/tobycm/simple-slideshow">simple-slideshow</a> -
+            a very simple slideshow library for pure web dev -
+            used on this very site! :D
+            <br>
+            Another demo site: <a
+              href="https://tobycm.github.io/simple-slideshow/">https://tobycm.github.io/simple-slideshow/</a>
+          </li>
+
+          <li>
+            <a href="https://github.com/tobycm/sfm">sfm</a> - a last.fm bot for slack!!!
+          </li>
+
+          <li>
+            <a href="https://github.com/tobycm/dfm">dfm</a> - last.fm rich presence for discord!! written in typescript
+            and powered by bun
+            <br>
+            Download here: <a href="https://github.com/tobycm/dfm/releases">dfm releases</a>
+          </li>
+
+          <li>
+            <a href="https://github.com/tobycm/tobydio">tobydio</a> - a pretty compact and useful board for you to test
+            your pcm5100a or your pcm1808a - made as part of Hack Club's OnBoard program
+          </li>
+        </ul>
+      </div>
+
+      <div class="slide projectsList">
+        <ul>
+          <li>
+            <a href="https://github.com/tobycm/minecraft-recipes-api">Minecraft Recipes API</a> - A modern API for
+            retrieving and managing Minecraft
+            recipes using Bun and ElysiaJS. API is online at <a
+              href="https://mc-recp.tobycm.dev">https://mc-recp.tobycm.dev</a>
+          </li>
+          <li>
+            <a href="https://github.com/tobycm/tobycm-music-manager">Manage your downloaded music from a YouTube
+              playlist
+              easily</a> - Used to manage
+            Toby's huge <a href="https://vsus.link/hcm">Happy Coding Music playlist</a>
+          </li>
+
+          <li>
+            Hardware + software magic: <a href="https://github.com/tobycm/loginfc">https://github.com/tobycm/loginfc</a>
+            -
+            Homemade security system :D
+            <br>
+            Demo: <a href="https://youtu.be/sH1NHUF4jtQ">https://youtu.be/sH1NHUF4jtQ</a>
+          </li>
+
+          <li>
+            Mostly how I self taught myself about servers and Linux:
+            <a href="https://www.reddit.com/r/homelab/comments/13krl7t/0_dollar_home_lab_in_basement/">Reddit post</a>
+          </li>
+
+          <li>
+            Check out more projects on my
+            <a href="https://github.com/tobycm">GitHub profile</a>
+          </li>
+        </ul>
+      </div>
     </div>
-    <script async src="/anchors.js"></script>
-  </body>
+
+    <footer>
+      <hr />
+      Copyright © <span id="year">2025</span> <a href="mailto:toby@vsus.app">toby@vsus.app</a> | GitHub:
+      <a href="https://github.com/tobycm/tobycm.dev">tobycm/tobycm.dev</a> | <a href="./resume oct 2025.pdf">maximizing
+        shareholders value</a> |
+      shoutout to <a href="https://kaipereira.com/">Kai Pereira</a> - hardware pro
+    </footer>
+  </div>
+  <script async src="/anchors.js"></script>
+</body>
+
 </html>

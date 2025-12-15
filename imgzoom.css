@@ -9,17 +9,11 @@ img:hover {
   z-index: 10;
 }
 
-img:hover {
-  @media screen and (min-width: 1024px) {
-    scale: 2;
-    border-radius: 0 !important;
-  }
-}
-
 .zoom:hover,
 .zoom:active {
   @media screen and (min-width: 1024px) {
     scale: 3;
+    border-radius: 0 !important;
   }
 }
 
@@ -27,6 +21,7 @@ img:hover {
 .bigZoom:active {
   @media screen and (min-width: 1024px) {
     scale: 8;
+    border-radius: 0 !important;
   }
 }
 
@@ -34,6 +29,7 @@ img:hover {
 .midBigZoom:active {
   @media screen and (min-width: 1024px) {
     scale: 40;
+    border-radius: 0 !important;
   }
 }
 
@@ -41,6 +37,7 @@ img:hover {
 .biggerZoom:active {
   @media screen and (min-width: 1024px) {
     scale: 50;
+    border-radius: 0 !important;
   }
 }
 

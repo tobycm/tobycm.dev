@@ -1,51 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The robotics side of tobycm</title>
 
-    <link rel="shortcut icon" href="/logo.svg" type="image/svg" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The robotics side of tobycm</title>
 
-    <meta name="description" content="a sneak peak into tobycm's robotics life" />
+  <link rel="shortcut icon" href="/logo.svg" type="image/svg" />
 
-    <!-- Open Graph meta tags -->
-    <meta property="og:title" content="Toby Cm's Robotics Life" />
-    <meta property="og:description" content="a sneak peak into tobycm's robotics life" />
-    <meta property="og:image" content="/robotics/happi.webp" />
-    <meta property="og:url" content="https://tobycm.dev/robotics" />
-    <meta property="og:site_name" content="Toby Cm's Personal Page" />
+  <meta name="description" content="a sneak peak into tobycm's robotics life" />
 
-    <link rel="stylesheet" href="/root.css" />
-    <link rel="stylesheet" href="/imgzoom.css" />
+  <!-- Open Graph meta tags -->
+  <meta property="og:title" content="Toby Cm's Robotics Life" />
+  <meta property="og:description" content="a sneak peak into tobycm's robotics life" />
+  <meta property="og:image" content="/robotics/happi.webp" />
+  <meta property="og:url" content="https://tobycm.dev/robotics" />
+  <meta property="og:site_name" content="Toby Cm's Personal Page" />
 
-    <link rel="stylesheet" id="theme" href="/dark.css" />
-    <link rel="preload" href="/light.css" as="style" />
+  <link rel="stylesheet" href="/root.css" />
+  <link rel="stylesheet" href="/imgzoom.css" />
 
-    <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" id="theme" href="/dark.css" />
+  <link rel="preload" href="/light.css" as="style" />
 
-    <link rel="stylesheet" href="https://tobycm.github.io/easy-snow/snow.css" />
-    <script>
-      const now = new Date();
-      document.christmas = now.getMonth() > 9 || now.getMonth() < 3; // Nov to Mar
-    </script>
-    <script src="https://tobycm.github.io/easy-snow/snow.js"></script>
-  </head>
-  <body>
-    <a href="/index.html" class="home exclude">&lt;- back to home page</a>
+  <link rel="stylesheet" href="index.css" />
 
-    <div style="float: right">
-      <button onclick="setTheme()" id="themeButton">🔆</button>
-    </div>
+  <link rel="stylesheet" href="https://tobycm.github.io/easy-snow/snow.css" />
+  <script>
+    const now = new Date();
+    document.christmas = now.getMonth() > 9 || now.getMonth() < 3; // Nov to Mar
+  </script>
+  <script src="https://tobycm.github.io/easy-snow/snow.js"></script>
+</head>
 
-    <script src="/theme.js"></script>
+<body>
+  <a href="/index.html" class="home exclude">&lt;- back to home page</a>
 
-    <div id="app">
-      <br />
-      <div id="opening">
-        <img
-          src="happi.webp"
-          srcset="
+  <div style="float: right">
+    <button onclick="setTheme()" id="themeButton">🔆</button>
+  </div>
+
+  <script src="/theme.js"></script>
+
+  <div id="app">
+    <br />
+    <div id="opening">
+      <img src="happi.webp" srcset="
             happi.webp       2049w,
             happi/x2048.webp 2048w,
             happi/x2048.png  2048w,
@@ -63,13 +63,9 @@
             happi/x256.png    256w,
             happi/x192.webp   192w,
             happi/x192.png    192w
-          "
-          alt="toby photo op"
-          style="transform-origin: top left; margin-left: 0; aspect-ratio: 3701 / 3456"
-          fetchpriority="high" />
-        <img
-          src="_MG_9181.webp"
-          srcset="
+          " alt="toby photo op" style="transform-origin: top left; margin-left: 0; aspect-ratio: 3701 / 3456"
+        fetchpriority="high" />
+      <img src="_MG_9181.webp" srcset="
             _MG_9181.webp       2049w,
             _MG_9181/x2048.webp 2048w,
             _MG_9181/x2048.png  2048w,
@@ -87,13 +83,8 @@
             _MG_9181/x256.png    256w,
             _MG_9181/x192.webp   192w,
             _MG_9181/x192.png    192w
-          "
-          alt="toby and mentor"
-          style="aspect-ratio: 2 / 3"
-          fetchpriority="low" />
-        <img
-          src="_MG_9190.webp"
-          srcset="
+          " alt="toby and mentor" style="aspect-ratio: 2 / 3" fetchpriority="low" />
+      <img src="_MG_9190.webp" srcset="
             _MG_9190.webp       2049w,
             _MG_9190/x2048.webp 2048w,
             _MG_9190/x2048.png  2048w,
@@ -111,13 +102,8 @@
             _MG_9190/x256.png    256w,
             _MG_9190/x192.webp   192w,
             _MG_9190/x192.png    192w
-          "
-          alt="<3"
-          style="aspect-ratio: 2 / 3"
-          fetchpriority="low" />
-        <img
-          src="xd.webp"
-          srcset="
+          " alt="<3" style="aspect-ratio: 2 / 3" fetchpriority="low" />
+      <img src="xd.webp" srcset="
             xd.webp       1025w,
             xd/x1024.webp 1024w,
             xd/x1024.png  1024w,
@@ -131,60 +117,49 @@
             xd/x256.png    256w,
             xd/x192.webp   192w,
             xd/x192.png    192w
-          "
-          alt="toby and team lead"
-          style="aspect-ratio: 4 / 5"
-          fetchpriority="low" />
-      </div>
-      <a href="https://pentictonrobotics.ca">
-        <h1>Penticton Robotics - FRC Team #8339</h1>
-      </a>
-      <h2 style="font-size: 1.25rem">Lead Robot Programming | Graphics Designer | Lead Website Developer | Electrician</h2>
-      <p><i>2 years and counting...</i></p>
-      <br />
-      <h2 id="compText">Competition participated:</h2>
-      <div class="competitionsContainer">
-        <div class="competitions">
-          <div class="competition">
-            <a href="https://www.firstinspires.org/robotics/frc/game-and-season">
-              <img
-                src="https://www.firstinspires.org/sites/default/files/2024-banner/frc_reefscape.gif"
-                alt="2025 FIRST Robotics Competition: Reefscape"
-                style="scale: 1"
-                fetchpriority="low"
-                loading="lazy" />
-            </a>
-            <div>
-              <p style="text-align: center">FIRST Robotics Competition: Reefscape&trade;</p>
-              <p style="text-align: center">2025</p>
-              <p style="text-align: center">Canadian Pacific Regional Winner 🏅</p>
-            </div>
+          " alt="toby and team lead" style="aspect-ratio: 4 / 5" fetchpriority="low" />
+    </div>
+    <a href="https://pentictonrobotics.ca">
+      <h1>Penticton Robotics - FRC Team #8339</h1>
+    </a>
+    <h2 style="font-size: 1.25rem">Team Leader | Coding Team Leader | Graphics Design Team Leader | Website Development
+      Team Leader | Electrician
+    </h2>
+    <p><i>3 years and counting...</i></p>
+    <br />
+    <h2 id="compText">Competition participated:</h2>
+    <div class="competitionsContainer">
+      <div class="competitions">
+        <div class="competition">
+          <a href="https://www.firstinspires.org/robotics/frc/game-and-season">
+            <img src="https://upload.wikimedia.org/wikipedia/en/b/b9/Reefscape_FRC_Logo.png"
+              alt="2025 FIRST Robotics Competition: Reefscape" style="scale: 1" fetchpriority="low" loading="lazy" />
+          </a>
+          <div>
+            <p style="text-align: center">FIRST Robotics Competition: Reefscape&trade;</p>
+            <p style="text-align: center">2025</p>
+            <p style="text-align: center">Canadian Pacific Regional Winner 🏅</p>
           </div>
-          <div class="competition">
-            <a href="https://www.firstinspires.org/robotics/frc/game-and-season">
-              <img
-                src="https://upload.wikimedia.org/wikipedia/en/8/88/Crescendo_FRC_Logo.svg"
-                alt="2024 FIRST Robotics Competition: Crescendo"
-                style="scale: 1"
-                fetchpriority="low"
-                loading="lazy" />
-            </a>
-            <div>
-              <p style="text-align: center">FIRST Robotics Competition: Crescendo&trade;</p>
-              <p style="text-align: center">2024</p>
-              <p style="text-align: center">Canadian Pacific Regional Alliance 8</p>
-            </div>
+        </div>
+        <div class="competition">
+          <a href="https://www.firstinspires.org/robotics/frc/game-and-season">
+            <img src="https://upload.wikimedia.org/wikipedia/en/8/88/Crescendo_FRC_Logo.svg"
+              alt="2024 FIRST Robotics Competition: Crescendo" style="scale: 1" fetchpriority="low" loading="lazy" />
+          </a>
+          <div>
+            <p style="text-align: center">FIRST Robotics Competition: Crescendo&trade;</p>
+            <p style="text-align: center">2024</p>
+            <p style="text-align: center">Canadian Pacific Regional Alliance 8</p>
           </div>
         </div>
       </div>
-      <div id="xd">
-        <div>
-          <img src="/signature.svg" alt="toby signature" fetchpriority="low" loading="lazy" />
-          <p style="text-align: center; translate: 0 -25px">- tobycm</p>
-        </div>
-        <img
-          src="IMG_3405.webp"
-          srcset="
+    </div>
+    <div id="xd">
+      <div>
+        <img src="/signature.svg" alt="toby signature" fetchpriority="low" loading="lazy" />
+        <p style="text-align: center; translate: 0 -25px">- tobycm</p>
+      </div>
+      <img src="IMG_3405.webp" srcset="
             IMG_3405.webp       2049w,
             IMG_3405/x2048.webp 2048w,
             IMG_3405/x2048.png  2048w,
@@ -202,18 +177,17 @@
             IMG_3405/x256.png    256w,
             IMG_3405/x192.webp   192w,
             IMG_3405/x192.png    192w
-          "
-          alt="<3"
-          fetchpriority="low"
-          loading="lazy" />
-      </div>
-      <footer>
-        <hr />
-        Copyright © <span id="year">2025</span> toby@vsus.app | GitHub: <a href="https://github.com/tobycm/tobycm.dev">tobycm/tobycm.dev</a> |
-        shoutout to my friend who want to take over las vegas
-      </footer>
+          " alt="<3" fetchpriority="low" loading="lazy" />
     </div>
+    <footer>
+      <hr />
+      Copyright © <span id="year">2025</span> <a href="mailto:toby@vsus.app">toby@vsus.app</a> | GitHub:
+      <a href="https://github.com/tobycm/tobycm.dev">tobycm/tobycm.dev</a> |
+      shoutout to <a href="https://kaipereira.com/">Kai Pereira</a> - hardware pro
+    </footer>
+  </div>
 
-    <script async src="/anchors.js"></script>
-  </body>
+  <script async src="/anchors.js"></script>
+</body>
+
 </html>
