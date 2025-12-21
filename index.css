@@ -77,6 +77,10 @@
       "greyback"
       "school";
   }
+
+  @media screen and (max-width: 1024px) {
+    gap: 1rem;
+  }
 }
 
 #name {
