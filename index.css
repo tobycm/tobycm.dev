@@ -232,3 +232,7 @@
 .bigcolumnsmallrowsimage .big {
   grid-area: big;
 }
+
+footer {
+  font-size: large;
+}
