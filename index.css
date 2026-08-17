@@ -5,6 +5,9 @@
   }
 }
 
+::selection {
+  background-color: var(--primary-color);
+}
 
 #logo {
   width: 3rem;
